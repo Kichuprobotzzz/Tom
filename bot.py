@@ -45,7 +45,12 @@ class Bot(Client):
         temp.U_NAME = me.username
         temp.B_NAME = me.first_name
         self.username = '@' + me.username
-        self.uptime = datetime.now()
+        async def start (self):
+       self.uptime = datetime.now()
+
+pine bot.py datetime imported ano nokana
+
+from datetime import datetime
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
         logging.info(script.LOGO)
