@@ -20,6 +20,7 @@ from datetime import date, datetime
 import pytz
 from aiohttp import web
 from plugins import web_server
+from datetime import datetime
 
 class Bot(Client):
 
@@ -47,10 +48,6 @@ class Bot(Client):
         self.username = '@' + me.username
         async def start (self):
        self.uptime = datetime.now()
-
-pine bot.py datetime imported ano nokana
-
-from datetime import datetime
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
         logging.info(script.LOGO)
